@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order</title>
+</head>
+<body>
+    <h1>Enter your details:-</h1>
+    <form>
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="e.g: Ronaldo Khan" required>
+        </div>
+        <div>
+            <label for="number">Contact: </label>
+            <input type="number" id="number" name="number" placeholder="e.g: +92 342-049920" required>
+        </div>
+        <div>
+            <label for="address">Address: </label>
+            <input type="text" id="address" name="address" placeholder="Enter complete address" required>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="e.g: ronaldo@gmail.com" required>
+        </div>
+
+        <h3>Select Shipping Country</h3>
+
+        <div>
+            <label for="country">Select a country:</label>
+            <select id="country" name="country">
+                <option value="">-- Please choose a country --</option>
+                <optgroup label="Asia">
+                    <option value="pk">Pakistan</option>
+                    <option value="ch">China</option>
+                    <option value="bd">Bangladesh</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="gm">Germany</option>
+                    <option value="uk">UK</option>
+                    <option value="sz">Switzerland</option>
+                </optgroup>
+                <optgroup label="Middle east">
+                    <option value="Oman">Toyota</option>
+                    <option value="Saudia">Honda</option>
+                    <option value="Qatar">Hyundai</option>
+                </optgroup>
+                <optgroup label="North/South America">
+                    <option value="us">USA</option>
+                    <option value="cn">Canada</option>
+                    <option value="mx">Mexico</option>
+                </optgroup>
+            </select>
+        </div>
+
+
+        <div>
+        <h3>Select Payment Method:-</h3>
+        </div>
+        <div>
+            <input type="radio" id="COD">
+            <label for="COD">Cash on delivery</label>
+        </div>
+        <div>
+            <input type="radio" id="Card">
+            <label for="Card">Card</label>
+        </div>
+        <div>
+            <button type="submit">Place order</button>
+        </div>
+    </form>
+</body>
+</html>
